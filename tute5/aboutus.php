@@ -1,10 +1,10 @@
 <?php
-$pagename = "Template"; //Create and populate a variable called $pagename
+$pagename="Template"; //Create and populate a variable called $pagename
 echo "<link rel=stylesheet type=text/css href=mystylesheet.css>"; //Call in stylesheet
-echo "<title>" . $pagename . "</title>"; //display name of the page as window title
+echo "<title>".$pagename."</title>"; //display name of the page as window title
 echo "<body>";
-include("headfile.html"); //include header layout file
-echo "<h4>" . $pagename . "</h4>"; //display name of the page on the web page
+include ("headfile.html"); //include header layout file
+echo "<h4>".$pagename."</h4>"; //display name of the page on the web page
 //display random text
 echo "homteq is a highly-specialised online retailer that offers a wide range of devices at the most competitive prices
 to make your home and your life super SMART.</br></br>
