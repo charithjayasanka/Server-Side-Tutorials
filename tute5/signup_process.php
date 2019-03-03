@@ -10,6 +10,7 @@ if ((empty($_POST['firstname'] && empty($_POST['lastname']) && empty($_POST['add
     echo "Success1";
     if ($_POST['password'] == $_POST['confpassword']) {
         echo "Success2";
+        echo "Success3";
     }
 
 
