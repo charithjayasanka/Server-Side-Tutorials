@@ -1,17 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.6.6deb5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jan 29, 2019 at 05:46 AM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.2.10
+-- Host: localhost:3306
+-- Generation Time: Mar 03, 2019 at 03:43 PM
+-- Server version: 5.7.25-0ubuntu0.18.04.2
+-- PHP Version: 7.2.15-0ubuntu0.18.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
-use tutorials;
+
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -19,7 +17,7 @@ use tutorials;
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `charith`
+-- Database: `tutorials`
 --
 
 -- --------------------------------------------------------
@@ -49,6 +47,24 @@ INSERT INTO `product` (`prodId`, `prodName`, `prodPicNameSmall`, `prodPicNameLar
 (3, 'ACER TC-885.021', 'three.small.jpg', 'three.big.jpg', 'ACER TC-885.021 Intel® Core™ i7+ Desktop PC - 1 TB HDD, Black', 'Technical specifications for ACER TC-885.021 Intel® Core™ i7+ Desktop PC - 1 TB HDD, Black\r\nOVERVIEW\r\nType	Desktop PC\r\nOperating system	Windows 10 (64-bit)\r\nPERFORMANCE\r\nProcessor	- Intel® Core™ i7+ 8700 Processor\r\n- Hexa-core\r\n- 3.2 GHz / 4.6 GHz\r\n- 12 MB cache\r\nRAM	- 4 GB DDR4 (2666 MHz)\r\n- 32 GB maximum installable RAM\r\nStorage	1 TB HDD (7200 rpm)\r\nIntel Optane	16 GB\r\nCONNECTIVITY\r\nWiFi	- Intel® dual-band AC WiFi\r\n- 1x1\r\n- Up to 433 Mbps\r\nEthernet	Gigabit Ethernet port\r\nBluetooth	Bluetooth 5.0\r\nUSB	- USB Type-C x 1\r\n- USB 3.1 x 3\r\n- USB 2.0 x 4\r\nVideo connections	- HDMI x 2\r\n- VGA x 1\r\nAudio connections	3.5 mm jack x 5\r\nSOUND\r\nAudio software	Integrated high definition sound\r\nMEDIA\r\nDisc drive	DVD\r\nMemory card reader	SD\r\nExpansion card slot	- PCIe 2.0 (x1) x 1\r\n- PCIe 3.0 (x16) x 1\r\n- M.2 (for SSD) x 1\r\n- M.2 (for WLAN) x 1\r\nFEATURES\r\nMouse / trackpad	Wireless mouse\r\nKeyboard	Wireless membrane keyboard with numeric keypad\r\nPOWER\r\nPSU	300 W\r\nGENERAL\r\nColour	Black\r\nBox contents	- Acer TC-885.021 Intel® Core™ i7+ Desktop PC\r\n- Antenna\r\n- Mouse\r\n- Keyboard\r\nDimensions	350 x 163 x 340 mm (H x W x D)\r\nManufacturer’s guarantee	1 year\r\nSoftware	* Full version of Microsoft Office not included\r\n* Full version of anti-virus / internet security not included\r\n\r\n- Office 365 (30 day trial)', '549.00', 200),
 (4, 'APPLE MacBook Pro 15\" with Tou', 'four.small.jpg', 'four.big.jpg', 'APPLE MacBook Pro 15\" with Touch Bar - 512 GB SSD, Space Grey (2018)', 'Technical specifications for APPLE MacBook Pro 15\" with Touch Bar - 512 GB SSD, Space Grey (2018)\r\nOVERVIEW\r\nType	MacBook Pro\r\nOperating system	macOS High Sierra\r\nPERFORMANCE\r\nProcessor	- Intel® Core™ i7 Processor\r\n- Hexa-core\r\n- 2.6 GHz / 4.3 GHz\r\nRAM	16 GB DDR4 (2400 MHz)\r\nGraphics card	- AMD Radeon Pro 560X\r\n- 4 GB DDR5\r\nStorage	512 GB SSD\r\nSCREEN\r\nTouchscreen	No\r\nScreen size	15\"\r\nScreen type	Retina display\r\nResolution	2560 x 1600\r\nScreen features	- LED backlighting\r\n- IPS technology\r\n- 227 pixels per inch\r\n- 500 nits brightness\r\n- Wide colour (P3)\r\n- True tone technology\r\nCONNECTIVITY\r\nWiFi	AC WiFi\r\nEthernet	No\r\nBluetooth	Bluetooth 5.0\r\nVideo connections	Thunderbolt 3 x 4\r\nAudio connections	3.5 mm jack\r\nSOUND\r\nAudio software	High dynamic range\r\nSpeakers	Yes\r\nMEDIA\r\nDisc drive	No\r\nMemory card reader	No\r\nFEATURES\r\nCamera	720p FaceTime HD camera\r\nMouse / trackpad	Force Touch trackpad\r\nKeyboard	Full-size backlit keyboard\r\nOther features	- Ambient light sensor\r\n- Touch Bar with integrated Touch ID sensor\r\n- Microphone x 3\r\nPOWER\r\nBattery type	Lithium-polymer\r\nBattery life	- In use: Up to 10 hours\r\n- Standby: Up to 30 days\r\nGENERAL\r\nColour	Space grey\r\nBox contents	- Apple MacBook Pro 15\" with Touch Bar\r\n- USB Type-C Power Adapter - 61 W\r\n- USB Type-C Charge Cable - 2 m\r\nDimensions	14.9 x 304.1 x 212.4 mm (H x W x D)\r\nWeight	1.37 kg\r\nManufacturer’s guarantee	1 year\r\nSoftware	Built in apps:\r\n- Photos\r\n- iMovie\r\n- GarageBand\r\n- Pages\r\n- Numbers\r\n- Keynote\r\n- Siri\r\n- Safari\r\n- Mail\r\n- FaceTime\r\n- Messages\r\n- Maps\r\n- Notes\r\n- Calendar\r\n- Contacts\r\n- Reminders\r\n- Photo Booth\r\n- Preview\r\n- iTunes\r\n- iBooks\r\n- App Store\r\n- Time Machine', '2.00', 300);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `userID` int(4) NOT NULL,
+  `userType` varchar(1) NOT NULL,
+  `userFName` varchar(50) NOT NULL,
+  `userSName` varchar(50) NOT NULL,
+  `userAddress` varchar(50) NOT NULL,
+  `userPostCode` varchar(50) NOT NULL,
+  `userTelNo` varchar(50) NOT NULL,
+  `userEmail` varchar(50) NOT NULL,
+  `userPassword` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Indexes for dumped tables
 --
@@ -60,6 +76,12 @@ ALTER TABLE `product`
   ADD PRIMARY KEY (`prodId`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`userID`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -68,8 +90,11 @@ ALTER TABLE `product`
 --
 ALTER TABLE `product`
   MODIFY `prodId` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-COMMIT;
-
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `userID` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
