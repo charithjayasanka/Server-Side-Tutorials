@@ -5,55 +5,30 @@ $pagename = "Your Sign Up Results"; //create and populate variable called $pagen
 echo "<link rel=stylesheet type=text/css href=mystylesheet.css>";
 echo "<title>" . $pagename . "</title>";
 
+echo "<h4>Your Sign Up Results</h4>"; //display name of the page on the web page
 
-if ((empty($_POST['firstname'] && empty($_POST['lastname']) && empty($_POST['address']) && empty($_POST['postcode']) && empty($_POST['telNo']) && empty($_POST['email']) && empty($_POST['password'] && empty($_POST['confpassword']))))) {
-    echo "Success1";
-    if ($_POST['password'] == $_POST['confpassword']) {
-        echo "Success2";
-        echo "Success3";
-    }
+//get pos data
+$fName = $_POST['fName'];
+$lName = $_POST['lName'];
+$address = $_POST['address'];
+$post = $_POST['post'];
+$number = $_POST['number'];
+$email = $_POST['email'];
+$psw = $_POST['psw'];
 
+// database connection
+$SQL="INSERT INTO `users` (`userType`, `userFName`, `userSName`, `userAddress`, `userPostCode`, `userTelNo`, `userEmail`, `userPassword`) 
+VALUES ('USER', '" .$fName. "', '" .$lName. "', '" .$address. "', '" .$post. "', '" .$number. "', '" .$email. "', '" .$psw. "');";
 
-} else {
-    echo "Success3";
+//$SQL="select * from Product WHERE prodId = 1";	
+//run SQL query for connected DB or exit and display error message
+//mysqli_query($conn, $SQL) or die (mysqli_error());
+if($conn -> query($SQL) === TRUE){
+	echo '<b>Sign up Successful!</b>
+		<p>To continue, Please <a href="login.php">Login</a></p>';
 }
 
 
-//
-//$firstName=$_POST['firstname'];
-//$lastName=$_POST['lastname'];
-//$address=$_POST['address'];
-//$postCode=$_POST['postcode'];
-//$telNo=$_POST['telNo'];
-//$email=$_POST['email'];
-//$password=$_POST['password'];
-//
-//$sql="INSERT INTO users (userType,userFName, userSName, userAddress,userPostCode,userTelNo,userEmail,userPassword) VALUES ($firstName,$firstName,$lastName,$address,$postCode,$telNo,$email,$password)";
-//
-//$exeSQL1=mysqli_query($conn, $sql) or die (mysqli_error($conn));
-//echo "<body>";
-//include ("headfile.html");
-//echo "<h4>".$pagename."</h4>";
-////create a $SQL variable and populate it with a SQL statement that retrieves product details
-////run SQL query for connected DB or exit and display error message
-////$sql="INSERT INTO table_name (userType,userFName,userSName,userAddress,userPostCode,userTelNo,userEmail,userPassword) VALUES ('hELLO',$userFName, $lastName, $address,$postCode,$telNo,$email,$password)";
-////$exeSQL1=mysqli_query($conn, $SQL) or die (mysqli_error($conn));
-//echo $sql;
-//echo "</br>";
-//echo $firstName;
-//echo "</br>";
-//echo $lastName;
-//echo "</br>";
-//echo $address;
-//echo "</br>";
-//echo $postCode;
-//echo "</br>";
-//echo $telNo;
-//echo "</br>";
-//echo $email;
-//echo "</br>";
-//echo $password;
-//echo "</br>";
 include("footfile.html");
 echo "</body>";
 /**
